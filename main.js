@@ -9,18 +9,21 @@ function createWindow(){
         title: 'LeagueWare',
         width:  1920,
         height: 1080,
-        minWidth: 1920,
-        minHeight: 1080
+        minWidth: 800,
+        minHeight: 600
+
         /*frame: false*/
     })
     win.loadURL("http://localhost:3000/")
 
-    // win.webContents.on('dom-ready', () => {
-    //     win.webContents.executeJavaScript(`
-    //         const body = document.querySelector('body');
-    //         body.style.webkitAppRegion = 'drag';
-    //     `);
-    // });
+    win.webContents.on('dom-ready', () => {
+        /*win.webContents.executeJavaScript(`
+            const body = document.querySelector('body');
+            body.style.webkitAppRegion = 'drag';
+
+        `);*/
+        win.webContents.insertCSS('::-webkit-scrollbar { display: none; }');
+     });
 }
 
 app.whenReady().then(() => {

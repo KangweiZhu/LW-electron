@@ -68,6 +68,9 @@ export default function App() {
 
   // Setting the dir attribute for the body element
   useEffect(() => {
+    /*const style = document.createElement("style");*/
+    /*style.innerHTML = "html {zoom: 75%}";
+    document.head.appendChild(style);*/
     document.body.setAttribute("dir", direction);
   }, [direction]);
 

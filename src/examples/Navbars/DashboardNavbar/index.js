@@ -152,7 +152,7 @@ function DashboardNavbar({ absolute, light, isMini }) {
           <VuiBox sx={(theme) => navbarRow(theme, { isMini })}>
             <VuiBox pr={50}>
               <VuiInput
-                placeholder="召唤师名(支持聊天框五个召唤师名字一起复制黏贴。如xxx1加入聊天，xxx2加入聊天，xxx3...)"
+                placeholder="召唤师名(支持聊天框五个召唤师名字一起复制黏贴。如xxx1加入聊天，xxx2加入聊天, xxx3..)"
                 icon={{component: "search", direction: "left" }}
                 sx={{
                   minWidth: '500px',

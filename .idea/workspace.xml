@@ -4,7 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3a6109af-7b5e-4ee7-9fa0-f99a0b9ce3e3" name="Changes" comment="" />
+    <list default="true" id="3a6109af-7b5e-4ee7-9fa0-f99a0b9ce3e3" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/readme.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/patch-image.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/readme.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/examples/Navbars/DashboardNavbar/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/examples/Navbars/DashboardNavbar/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/dashboard/components/SatisfactionRate/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/dashboard/components/SatisfactionRate/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/dashboard/components/WelcomeMark/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/dashboard/components/WelcomeMark/index.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,7 +34,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/LW/template_leagueware",
+    "last_opened_file_path": "D:/LW/template_leagueware/src/assets/images",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -35,6 +46,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\LW\template_leagueware\src\assets\images" />
       <recent name="D:\LW\template_leagueware" />
     </key>
   </component>
@@ -46,7 +58,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1689952710252</updated>
-      <workItem from="1689952711655" duration="14225000" />
+      <workItem from="1689952711655" duration="18581000" />
     </task>
     <servers />
   </component>
