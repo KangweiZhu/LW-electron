@@ -1,1 +1,2 @@
-![src/assets/images/readme.png](src/assets/images/readme.png)
+# LW-electron
+![img.png](img.png)
