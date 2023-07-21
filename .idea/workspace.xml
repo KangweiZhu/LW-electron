@@ -5,16 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3a6109af-7b5e-4ee7-9fa0-f99a0b9ce3e3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/readme.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/patch-image.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/readme.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/examples/Navbars/DashboardNavbar/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/examples/Navbars/DashboardNavbar/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layouts/dashboard/components/SatisfactionRate/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/dashboard/components/SatisfactionRate/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layouts/dashboard/components/WelcomeMark/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/dashboard/components/WelcomeMark/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.png" beforeDir="false" afterPath="$PROJECT_DIR$/img.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +49,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1689952710252</updated>
-      <workItem from="1689952711655" duration="18581000" />
+      <workItem from="1689952711655" duration="18880000" />
     </task>
     <servers />
   </component>
