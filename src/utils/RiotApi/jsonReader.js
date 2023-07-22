@@ -1,5 +1,4 @@
-const version_url = "https://ddragon.leagueoflegends.com/api/versions.json";
-function patchReader(url, callback) {
+function jsonReader(url, callback) {
     const xhr = new XMLHttpRequest();
     xhr.open('GET', url, true);
     xhr.onreadystatechange = function () {
@@ -14,4 +13,4 @@ function patchReader(url, callback) {
     xhr.send();
 }
 
-export default patchReader;
+export default jsonReader;

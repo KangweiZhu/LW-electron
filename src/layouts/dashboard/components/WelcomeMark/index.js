@@ -4,13 +4,13 @@ import { Card, Icon } from "@mui/material";
 import VuiBox from "components/VuiBox";
 import VuiTypography from "components/VuiTypography";
 import PatchImage from "assets/images/patch-image.png"
-import patchReader from "../../../../utils/RiotApi/patchReader";
+import jsonReader from "../../../../utils/RiotApi/jsonReader";
 
 import gif from "assets/images/cardimgfree.png";
 
 var patch_version = "未知";
 const version_url = "https://ddragon.leagueoflegends.com/api/versions.json";
-patchReader(version_url, (data) => {
+jsonReader(version_url, (data) => {
     patch_version = data;
 })
 
