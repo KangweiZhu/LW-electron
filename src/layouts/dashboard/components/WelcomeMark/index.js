@@ -4,8 +4,15 @@ import { Card, Icon } from "@mui/material";
 import VuiBox from "components/VuiBox";
 import VuiTypography from "components/VuiTypography";
 import PatchImage from "assets/images/patch-image.png"
+import patchReader from "../../../../utils/RiotApi/patchReader";
 
 import gif from "assets/images/cardimgfree.png";
+
+var patch_version = "未知";
+const version_url = "https://ddragon.leagueoflegends.com/api/versions.json";
+patchReader(version_url, (data) => {
+    patch_version = data;
+})
 
 const WelcomeMark = () => {
   return (
@@ -18,14 +25,14 @@ const WelcomeMark = () => {
     })}>
       <VuiBox height="100%" display="flex" flexDirection="column" justifyContent="space-between">
         <VuiBox>
-          <VuiTypography color="Black" variant="h4" fontWeight="bold" mb="12px">
+          <VuiTypography color="white" variant="h1" fontWeight="bold" mb="40px">
             欢迎回来！
           </VuiTypography>
-          <VuiTypography color="Black" variant="h3" fontWeight="bold" mb="18px">
-            当前国服版本：13.14
+          <VuiTypography color="white" variant="h4" fontWeight="bold" mb="18px">
+            当前Riot直营服务器版本:  {patch_version}
           </VuiTypography>
           <VuiTypography color="text" variant="h6" fontWeight="regular" mb="auto">
-            <strong>留空</strong>
+            <strong></strong>
             <br />
           </VuiTypography>
         </VuiBox>
@@ -53,7 +60,7 @@ const WelcomeMark = () => {
             },
           }}
         >
-            查看 13.14 版本改动  !
+            查看国服 {patch_version} 版本改动  !
           <Icon sx={{ fontWeight: "bold", ml: "0px" }}>arrow_forward</Icon>
         </VuiTypography>
       </VuiBox>

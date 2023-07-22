@@ -35,6 +35,7 @@ import Icon from "@mui/material/Icon";
 import VuiBox from "components/VuiBox";
 import VuiTypography from "components/VuiTypography";
 import VuiInput from "components/VuiInput";
+import routes from "../../../routes"
 
 // Vision UI Dashboard React example components
 import Breadcrumbs from "examples/Breadcrumbs";
@@ -68,6 +69,12 @@ function DashboardNavbar({ absolute, light, isMini }) {
   const [openMenu, setOpenMenu] = useState(false);
   const route = useLocation().pathname.split("/").slice(1);
 
+  function getRouteName() {
+    const currentRoute = route[route.length - 1];
+    const matchedRoute = routes.find((r) => r.route === `/${currentRoute}`);
+    return matchedRoute ? matchedRoute.name : "";
+  }
+
   useEffect(() => {
     // Setting the navbar type
     if (fixedNavbar) {
@@ -81,6 +88,14 @@ function DashboardNavbar({ absolute, light, isMini }) {
       setTransparentNavbar(dispatch, (fixedNavbar && window.scrollY === 0) || !fixedNavbar);
     }
 
+    /**
+     * Dynamically change the title of the Breadcrumbs through matching the different urls' names
+     */
+    if (route[route.length - 1] === "dashboard"){
+      route[route.length - 1] = "信息概览"
+    }
+
+    console.log(route[route.length - 1])
     /** 
      The event listener that's calling the handleTransparentNavbar function when 
      scrolling the window.
@@ -146,7 +161,7 @@ function DashboardNavbar({ absolute, light, isMini }) {
     >
       <Toolbar sx={(theme) => navbarContainer(theme)}>
         <VuiBox color="inherit" mb={{ xs: 1, md: 0 }} sx={(theme) => navbarRow(theme, { isMini })}>
-          <Breadcrumbs icon="home" title={route[route.length - 1]} route={route} light={light} />
+          <Breadcrumbs icon="home" title={getRouteName()} route={route} light={light} />
         </VuiBox>
         {isMini ? null : (
           <VuiBox sx={(theme) => navbarRow(theme, { isMini })}>
