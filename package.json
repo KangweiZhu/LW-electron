@@ -2,6 +2,7 @@
 	"name": "vision-ui-dashboard-react",
 	"version": "3.0.0",
 	"private": true,
+	"requestExecutionLevel": "requireAdministrator",
 	"author": "Creative Tim",
 	"license": "See license in https://www.creative-tim.com/license",
 	"description": "Material UI version of Vision UI Dashboard by Creative Tim",
@@ -26,6 +27,7 @@
 		"@testing-library/react": "11.1.0",
 		"@testing-library/user-event": "12.1.10",
 		"apexcharts": "^3.30.0",
+		"child_process": "^1.0.2",
 		"chroma-js": "2.1.2",
 		"electron": "^25.3.1",
 		"eslint": "^7.11.0",
@@ -43,6 +45,7 @@
 		"react-scripts": "4.0.3",
 		"stylis": "4.0.10",
 		"stylis-plugin-rtl": "2.1.0",
+		"sudo-prompt": "^9.2.1",
 		"uuid": "8.3.2",
 		"web-vitals": "1.0.1"
 	},

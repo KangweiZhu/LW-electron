@@ -6,12 +6,10 @@ import VuiTypography from "components/VuiTypography";
 import PatchImage from "assets/images/patch-image.png"
 import jsonReader from "../../../../utils/RiotApi/jsonReader";
 
-import gif from "assets/images/cardimgfree.png";
-
 var patch_version = "未知";
 const version_url = "https://ddragon.leagueoflegends.com/api/versions.json";
 jsonReader(version_url, (data) => {
-    patch_version = data;
+    patch_version = data[0];
 })
 
 const WelcomeMark = () => {
