@@ -29,9 +29,18 @@ import LineChart from 'examples/Charts/LineCharts/LineChart';
 import { lineChartDataProfile1, lineChartDataProfile2 } from 'variables/charts';
 import { lineChartOptionsProfile2, lineChartOptionsProfile1 } from 'variables/charts';
 import CircularProgress from '@mui/material/CircularProgress';
+
+
+//summonerInfo part
+import {summoner_infos} from "../../../dashboard/components/WelcomeMark/index";
+
+
+
 const CarInformations = () => {
 	const { gradients, info } = colors;
 	const { cardContent } = gradients;
+
+
 	return (
 		<Card
 			sx={({ breakpoints }) => ({

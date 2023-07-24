@@ -13,6 +13,8 @@ const SatisfactionRate = () => {
     const {info, gradients} = colors;
     const {cardContent} = gradients;
 
+
+
     return (
         <Card sx={{height: '340px'}}>
             <VuiBox display='flex' flexDirection='column'>

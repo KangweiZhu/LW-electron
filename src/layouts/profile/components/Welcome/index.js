@@ -22,6 +22,10 @@ import welcome from "assets/images/welcome-profile.png";
 import VuiTypography from "components/VuiTypography/index";
 import VuiBox from "components/VuiBox/index";
 
+//summonerInfo
+import {summoner_infos} from "../../../dashboard/components/WelcomeMark/index";
+
+
 const Welcome = () => {
   return (
     <Card

@@ -36,19 +36,30 @@ import { IoDocument } from "react-icons/io5";
 import { IoBuild } from "react-icons/io5";
 // Vision UI Dashboard React example components
 import DashboardNavbar from "examples/Navbars/DashboardNavbar";
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
+
+//electron ipcRenderer to communicate with main process
+const {ipcRenderer} = window.require('electron');
+
+//Summoner Part
+import {summoner_infos} from "../../../dashboard/components/WelcomeMark/index";
 
 function Header() {
   const [tabsOrientation, setTabsOrientation] = useState("horizontal");
   const [tabValue, setTabValue] = useState(0);
 
+  const [summonerIconPng, setSummonerIconPng] = React.useState("");
+
   useEffect(() => {
+    ipcRenderer.send("request-for-summoner-icon", summoner_infos.profileIconId);
+
     // A function that sets the orientation state of the tabs.
     function handleTabsOrientation() {
       return window.innerWidth < breakpoints.values.lg
         ? setTabsOrientation("vertical")
         : setTabsOrientation("horizontal");
     }
+
 
     /** 
      The event listener that's calling the handleTabsOrientation function when resizing the window.
@@ -127,10 +138,13 @@ function Header() {
               })}
             >
               <VuiTypography variant="lg" color="white" fontWeight="bold">
-                Mark Johnson
+                {summoner_infos.displayName}
               </VuiTypography>
               <VuiTypography variant="button" color="text" fontWeight="regular">
-                mark@simmmple.com
+                等级： {summoner_infos.summonerLevel + "级"}
+              </VuiTypography>
+              <VuiTypography variant="button" color="text" fontWeight="regular">
+                账号社交状态：{summoner_infos.privacy == "PUBLIC" ? "公开" : "私密"}
               </VuiTypography>
             </VuiBox>
           </Grid>
