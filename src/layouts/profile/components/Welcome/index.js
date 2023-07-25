@@ -42,10 +42,10 @@ const Welcome = () => {
       <VuiBox display="flex" flexDirection="column" sx={{ height: "100%" }}>
         <VuiBox display="flex" flexDirection="column" mb="auto">
           <VuiTypography color="white" variant="h3" fontWeight="bold" mb="3px">
-            Welcome back!
+            一寸光阴一寸金,
           </VuiTypography>
           <VuiTypography color="white" variant="button" fontWeight="regular">
-            Nice to see you, Mark Johnson!
+            {summoner_infos.displayName}!
           </VuiTypography>
         </VuiBox>
         <VuiBox justifySelf="flex-end">

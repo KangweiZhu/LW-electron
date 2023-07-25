@@ -6,9 +6,8 @@ import PatchImage from "assets/images/patch-image.png"
 import jsonReader from "../../../../utils/json/jsonReader";
 const {app, remote, ipcRenderer} = window.require('electron')
 
-let patch_version = "未知";
-let summonerName = "未知"
-export let summoner_infos;
+export let patch_version = "未知";
+export let summoner_infos = "";
 const version_url = "https://ddragon.leagueoflegends.com/api/versions.json";
 
 jsonReader(version_url, (data) => {
@@ -17,7 +16,6 @@ jsonReader(version_url, (data) => {
 
 const WelcomeMark = () => {
   const [summonerInfo, setSummonerInfo] = React.useState("未知");
-
   useEffect(() => {
     ipcRenderer.send('react-effect-loaded', '');
     // 监听从main.js发送来的数据
@@ -26,21 +24,16 @@ const WelcomeMark = () => {
       // 示例：更新state中的token值
       setSummonerInfo(data);
       summoner_infos = data;
-      console.log(data)
     });
-
     // 组件卸载时解除监听
     return () => {
       ipcRenderer.removeAllListeners('data-from-main');
     };
   }, []);
 
-  console.log(summonerInfo);
-  summonerName = summonerInfo.displayName;
-
     return (
         <Card sx={() => ({
-            height: "340px",
+            height: "360px",
             py: "32px",
             backgroundImage: `url(${PatchImage})`,
             backgroundSize: "cover",
@@ -48,8 +41,8 @@ const WelcomeMark = () => {
         })}>
             <VuiBox height="100%" display="flex" flexDirection="column" justifyContent="space-between">
                 <VuiBox>
-                    <VuiTypography color="info" variant="h3" fontWeight="bold" mb="40px">
-                        欢迎回来, {summonerName}!
+                    <VuiTypography color="white" variant="h3" fontWeight="bold" mb="40px">
+                        欢迎回来, {summonerInfo.displayName}!
                     </VuiTypography>
                     <VuiTypography color="white" variant="h4" fontWeight="bold" mb="18px">
                         当前Riot直营服务器版本: {patch_version}
@@ -84,7 +77,7 @@ const WelcomeMark = () => {
                     }}
                 >
                     查看国服 {patch_version} 版本改动 !
-                    <Icon sx={{fontWeight: "bold", ml: "0px"}}>arrow_forward</Icon>
+                    <Icon sx={{fontWeight: "bold", ml: "10px"}}>arrow_forward</Icon>
                 </VuiTypography>
             </VuiBox>
         </Card>

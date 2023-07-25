@@ -5,19 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3a6109af-7b5e-4ee7-9fa0-f99a0b9ce3e3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/preload.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/constant.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-port.txt" beforeDir="false" afterPath="$PROJECT_DIR$/client-port.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/examples/Navbars/DefaultNavbar/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/examples/Navbars/DefaultNavbar/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/layouts/dashboard/components/SatisfactionRate/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/dashboard/components/SatisfactionRate/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/layouts/dashboard/components/WelcomeMark/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/dashboard/components/WelcomeMark/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layouts/profile/components/CarInformations/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/profile/components/CarInformations/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/dashboard/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/dashboard/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/layouts/profile/components/Header/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/profile/components/Header/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/layouts/profile/components/Welcome/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/profile/components/Welcome/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/RiotApi/jsonReader.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/json/jsonReader.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/profile/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/profile/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +74,7 @@
       <option name="presentableId" value="Default" />
       <updated>1689952710252</updated>
       <workItem from="1689952711655" duration="79221000" />
-      <workItem from="1690172384120" duration="22911000" />
+      <workItem from="1690172384120" duration="33203000" />
     </task>
     <servers />
   </component>

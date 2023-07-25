@@ -42,24 +42,21 @@ import React, { useEffect, useState } from "react";
 const {ipcRenderer} = window.require('electron');
 
 //Summoner Part
-import {summoner_infos} from "../../../dashboard/components/WelcomeMark/index";
+import {summoner_infos, patch_version} from "../../../dashboard/components/WelcomeMark/index";
+import {ranked_stats} from "../../../dashboard/components/SatisfactionRate";
 
 function Header() {
   const [tabsOrientation, setTabsOrientation] = useState("horizontal");
   const [tabValue, setTabValue] = useState(0);
 
-  const [summonerIconPng, setSummonerIconPng] = React.useState("");
-
+  const profileIconUrl = "http://ddragon.leagueoflegends.com/cdn/" + patch_version +"/img/profileicon/" + summoner_infos.profileIconId + ".png"
   useEffect(() => {
-    ipcRenderer.send("request-for-summoner-icon", summoner_infos.profileIconId);
-
     // A function that sets the orientation state of the tabs.
     function handleTabsOrientation() {
       return window.innerWidth < breakpoints.values.lg
         ? setTabsOrientation("vertical")
         : setTabsOrientation("horizontal");
     }
-
 
     /** 
      The event listener that's calling the handleTabsOrientation function when resizing the window.
@@ -70,10 +67,18 @@ function Header() {
     handleTabsOrientation();
 
     // Remove event listener on cleanup
-    return () => window.removeEventListener("resize", handleTabsOrientation);
+    return () => {
+      window.removeEventListener("resize", handleTabsOrientation);
+    }
   }, [tabsOrientation]);
 
   const handleSetTabValue = (event, newValue) => setTabValue(newValue);
+
+
+
+  const highestPreviousSeasonAchievedDivision = ranked_stats.highestCurrentSeasonReachedTierSR;
+
+
 
   return (
     <VuiBox position="relative">
@@ -116,7 +121,7 @@ function Header() {
             })}
           >
             <VuiAvatar
-              src={burceMars}
+              src={profileIconUrl}
               alt="profile-image"
               variant="rounded"
               size="xl"
@@ -144,7 +149,7 @@ function Header() {
                 等级： {summoner_infos.summonerLevel + "级"}
               </VuiTypography>
               <VuiTypography variant="button" color="text" fontWeight="regular">
-                账号社交状态：{summoner_infos.privacy == "PUBLIC" ? "公开" : "私密"}
+                账号社交状态：{summoner_infos.privacy === "PUBLIC" ? "公开" : "私密"}
               </VuiTypography>
             </VuiBox>
           </Grid>
@@ -156,9 +161,9 @@ function Header() {
                 onChange={handleSetTabValue}
                 sx={{ background: "transparent", display: "flex", justifyContent: "flex-end" }}
               >
-                <Tab label="OVERVIEW" icon={<IoCube color="white" size="16px" />} />
-                <Tab label="TEAMS" icon={<IoDocument color="white" size="16px" />} />
-                <Tab label="PROJECTS" icon={<IoBuild color="white" size="16px" />} />
+                <Tab label="总览" icon={<IoCube color="white" size="16px" />} />
+                <Tab label="历史战绩" icon={<IoDocument color="white" size="16px" />} />
+                <Tab label="我的库存" icon={<IoBuild color="white" size="16px" />} />
               </Tabs>
             </AppBar>
           </Grid>

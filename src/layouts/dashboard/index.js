@@ -110,17 +110,17 @@ function Dashboard() {
             </Grid>
           </Grid>
         </VuiBox>*/}
-        <VuiBox mb={3}>
-          <Grid container spacing="18px">
-            <Grid item xs={12} lg={12} xl={5}>
+        <VuiBox mb={4}>
+          <Grid container spacing={3}>
+            <Grid item xs={12} lg={8} xl={8}>
               <WelcomeMark />
             </Grid>
-            <Grid item xs={12} lg={6} xl={3}>
+            <Grid item xs={12} lg={4} xl={4}>
               <SatisfactionRate />
             </Grid>
-            <Grid item xs={12} lg={6} xl={4}>
+            {/*<Grid item xs={12} lg={6} xl={4}>
               <ReferralTracking />
-            </Grid>
+            </Grid>*/}
           </Grid>
         </VuiBox>
         <VuiBox mb={3}>

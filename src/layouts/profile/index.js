@@ -71,7 +71,7 @@ function Overview() {
               },
             })}
           >
-            <Welcome />
+            {/*<Welcome />*/}
           </Grid>
           <Grid
             item

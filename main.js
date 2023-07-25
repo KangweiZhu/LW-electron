@@ -120,10 +120,11 @@ fs.readFile("client-port.txt", "utf16le", (err, data) => {
     },
     httpsAgent: agent,
   };
-
   //构建一下请求地址。
-   let reqUrl = localhostUrl + appPort + LCUSUMMONERINFO;
+  let reqUrl = localhostUrl + appPort + LCUSUMMONERINFO;
+  console.log("Basic " + btoa("riot:" + remotingAuthToekn));
 
+  console.log(reqUrl);
   //注意，ipcMain.on(字符串，(e,args) => xxxxxx    这个字符串我们管他叫channel. 其实就是字符串匹配。你在前端，也就是react中，得先在这个相同的字符串channel发送条消息给这里，
   //大白话就是唤醒electron，告诉electron，我网页加载到这儿了，你可以给我传点可以渲染的东西。 那么electron为了能被唤醒，就得用ipcMain接受着。
   //ps: ipcMain 写在electron, ipcRenderer写在react.不可呼唤。  两者都有on和send方法，on表示监听，send表示发送。
@@ -141,16 +142,21 @@ fs.readFile("client-port.txt", "utf16le", (err, data) => {
       });
   });
 
-  //第二个数据：搞一下用户头像
+  //第二个数据：搞一下用户排位数据，用于在profile的header.js中展示
   //1.构建url
-  let reqUrl2 = localhostUrl + appPort + "/lol-summoner/v2/summoner-icons";
-  ipcMain.on("request-for-summoner-icon", (event, args) => {
+  let reqUrl2 = localhostUrl + appPort + "/lol-ranked/v1/current-ranked-stats";
+  console.log(reqUrl2)
+  ipcMain.on("request-for-current-ranked-stats", (event, args) => {
     console.log("entered");
-    axios.get(reqUrl, requestHeaders).then(response => {
+    axios.get(reqUrl2, requestHeaders).then(response => {
       let responseData = JSON.stringify(response.data);
-      console.log(responseData);
+      let jsonData = JSON.parse(responseData);
+      mainWindow.webContents.send("send-current-ranked-stats", jsonData);
     })
   })
+
+
+  //
 });
 
 

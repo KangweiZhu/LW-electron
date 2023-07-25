@@ -86,7 +86,7 @@ const routes = [
 /*  { type: "title", title: "Account Pages", key: "account-pages" },*/
   {
     type: "collapse",
-    name: "玩家查询",
+    name: "玩家信息",
     key: "profile",
     route: "/profile",
     icon: <BsFillPersonFill size="15px" color="inherit" />,
