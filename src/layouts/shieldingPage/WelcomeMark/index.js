@@ -33,7 +33,7 @@ const WelcomeMark = () => {
 
     return (
         <Card sx={() => ({
-            height: "700px",
+            height: "540px",
             py: "32px",
             backgroundImage: `url(${PatchImage})`,
             backgroundSize: "cover",

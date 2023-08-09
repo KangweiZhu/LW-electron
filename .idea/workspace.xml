@@ -9,12 +9,20 @@
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-port.txt" beforeDir="false" afterPath="$PROJECT_DIR$/client-port.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/examples/Navbars/DefaultNavbar/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/examples/Navbars/DefaultNavbar/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layouts/dashboard/components/SatisfactionRate/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/dashboard/components/SatisfactionRate/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/patch-image.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/examples/Footer/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/examples/Footer/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/billing/components/Bill/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/billing/components/BillingInformation/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/billing/components/CreditBalance/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/billing/components/Invoice/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/billing/components/Invoices/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/billing/components/PaymentMethod/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/billing/components/Transaction/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/billing/components/Transactions/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/billing/index.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/layouts/dashboard/components/WelcomeMark/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/dashboard/components/WelcomeMark/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/layouts/dashboard/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/dashboard/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layouts/profile/components/Header/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/profile/components/Header/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layouts/profile/components/Welcome/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/profile/components/Welcome/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/layouts/profile/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/profile/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes.js" afterDir="false" />
     </list>
@@ -43,7 +51,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/LW/template_leagueware",
+    "last_opened_file_path": "D:/LW/template_leagueware/src/layouts/shieldingPage",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -56,8 +64,9 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\LW\template_leagueware" />
+      <recent name="D:\LW\template_leagueware\src\layouts\shieldingPage" />
       <recent name="D:\LW\template_leagueware\src\assets\images" />
+      <recent name="D:\LW\template_leagueware" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\LW\template_leagueware\src\riotObj" />
@@ -74,7 +83,9 @@
       <option name="presentableId" value="Default" />
       <updated>1689952710252</updated>
       <workItem from="1689952711655" duration="79221000" />
-      <workItem from="1690172384120" duration="33203000" />
+      <workItem from="1690172384120" duration="36836000" />
+      <workItem from="1690356195529" duration="1929000" />
+      <workItem from="1691608973513" duration="3545000" />
     </task>
     <servers />
   </component>

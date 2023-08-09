@@ -41,7 +41,6 @@
 // Vision UI Dashboard React layouts
 import Dashboard from "layouts/dashboard";
 import Tables from "layouts/tables";
-import Billing from "layouts/billing";
 import Profile from "layouts/profile";
 import SignIn from "layouts/authentication/sign-in";
 import SignUp from "layouts/authentication/sign-up";
@@ -67,25 +66,6 @@ const routes = [
   },
   {
     type: "collapse",
-    name: "英雄排行",
-    key: "tables",
-    route: "/tables",
-    icon: <IoStatsChart size="15px" color="inherit" />,
-    component: Tables,
-    noCollapse: true,
-  },
-  {
-    type: "collapse",
-    name: "英雄数据",
-    key: "billing",
-    route: "/billing",
-    icon: <BsCreditCardFill size="15px" color="inherit" />,
-    component: Billing,
-    noCollapse: true,
-  },
-/*  { type: "title", title: "Account Pages", key: "account-pages" },*/
-  {
-    type: "collapse",
     name: "玩家信息",
     key: "profile",
     route: "/profile",
@@ -95,7 +75,26 @@ const routes = [
   },
   {
     type: "collapse",
-    name: "我的信息",
+    name: "英雄排行",
+    key: "champion_tier",
+    route: "/champion_tier",
+    icon: <IoStatsChart size="15px" color="inherit" />,
+    /*component: Tables,*/
+    noCollapse: true,
+  },
+  {
+    type: "collapse",
+    name: "英雄数据",
+    key: "champion_stats",
+    route: "/champion_stats",
+    icon: <BsCreditCardFill size="15px" color="inherit" />,
+    /*component: Billing,*/
+    noCollapse: true,
+  },
+/*  { type: "title", title: "Account Pages", key: "account-pages" },*/
+  {
+    type: "collapse",
+    name: "登录",
     key: "sign-in",
     route: "/authentication/sign-in",
     icon: <IoIosDocument size="15px" color="inherit" />,

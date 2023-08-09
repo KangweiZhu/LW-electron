@@ -92,6 +92,7 @@ fs.readFile("client-port.txt", "utf16le", (err, data) => {
   const rawArr = data.split(" ");
   for (let i = 0; i < rawArr.length; i++) {
     var raw = rawArr[i].toString();
+    console.log(i, raw)
     var modifiedString = raw.replace(/"/g, "");
     var parts = modifiedString.split("=");
     if (i === 1400) {
@@ -156,7 +157,6 @@ fs.readFile("client-port.txt", "utf16le", (err, data) => {
   })
 
 
-  //
 });
 
 

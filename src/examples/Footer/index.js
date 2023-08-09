@@ -37,30 +37,19 @@ function Footer() {
           sx={{ textAlign: "center", fontWeight: "400 !important" }}
           color="white"
         >
-          @ 2021, Made with ❤️&nbsp;&nbsp;&nbsp; by{" "}
+          @ 2023.8.10, 基于 ❤️Vision UI; By{" "}
           <VuiTypography
             component="a"
             variant="button"
-            href="https://simmmple.com/"
+            href="https://www.anicaaz.com/"
+            target={"_blank"}
             sx={{ textAlign: "center", fontWeight: "500 !important" }}
             color="white"
             mr="2px"
           >
-            Simmmple
+          Anicaaovo
           </VuiTypography>
-          &
-          <VuiTypography
-            ml="2px"
-            mr="2px"
-            component="a"
-            variant="button"
-            href="https://www.creative-tim.com/"
-            sx={{ textAlign: "center", fontWeight: "500 !important" }}
-            color="white"
-          >
-            Creative Tim
-          </VuiTypography>
-          for a better web
+          , 致力于构建合法、高效、简洁的英雄联盟第三方工具
         </VuiTypography>
       </VuiBox>
       <VuiBox item xs={10}>
@@ -68,31 +57,23 @@ function Footer() {
           <VuiBox mr={{ xs: "20px", lg: "46px" }}>
             <VuiTypography
               component="a"
-              href="https://www.creative-tim.com/templates"
+              href="https://www.baidu.com/"
+              target={"_blank"}
               variant="body2"
               color="white"
             >
-              Marketplace
+              官方网站
             </VuiTypography>
           </VuiBox>
-          <VuiBox mr={{ xs: "20px", lg: "46px" }}>
-            <VuiTypography
-              component="a"
-              href="https://www.creative-tim.com/blog/"
-              variant="body2"
-              color="white"
-            >
-              Blog
-            </VuiTypography>
-          </VuiBox>
+
           <VuiBox>
             <VuiTypography
               component="a"
-              href="https://www.creative-tim.com/license"
+              href="https://www.baidu.com"
               variant="body2"
               color="white"
             >
-              License
+              提出建议
             </VuiTypography>
           </VuiBox>
         </VuiBox>

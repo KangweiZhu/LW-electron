@@ -42,9 +42,9 @@ import routes from "routes";
 import { useVisionUIController, setMiniSidenav, setOpenConfigurator } from "context";
 
 export default function App() {
-  const [controller, dispatch] = useVisionUIController();
+  const [ controller, dispatch] = useVisionUIController();
   const { miniSidenav, direction, layout, openConfigurator, sidenavColor } = controller;
-  const [onMouseEnter, setOnMouseEnter] = useState(false);
+  const [ onMouseEnter, setOnMouseEnter] = useState(false);
   const { pathname } = useLocation();
 
   // Open sidenav when mouse enter on mini sidenav
